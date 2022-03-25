@@ -13,7 +13,7 @@ const Watches = () => {
     console.log(watches)
     return (
         <div className='container'>
-            <div className="row">
+            <div className="row mt-3">
                 <div className="col-lg-8 col-md-8 col-sm-12 col-12">
                     <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1 g-4'>
                         {
