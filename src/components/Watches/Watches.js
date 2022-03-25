@@ -3,6 +3,7 @@ import './Watches.css'
 import {AddToWatchDb,getWatchFromDb,removeFromDb,removeAllFromDb}from '../../utilites/watchDb'
 import Watch from './Watch/Watch';
 import Cart from '../Cart/Cart';
+import Questions from '../Questions/Questions';
 
 const Watches = () => {
     const [watches,setWatches]=useState([])
@@ -80,6 +81,12 @@ const Watches = () => {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                     <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart} handleRemoveAllFromCart={handleRemoveAllFromCart} handleRandomItem={handleRandomItem}/>
+                </div>
+            </div>
+            <hr />
+            <div className="row mt-3">
+                <div className="col-12">
+                    <Questions/>
                 </div>
             </div>
         </div>
