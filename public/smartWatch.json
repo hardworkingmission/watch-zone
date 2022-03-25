@@ -1,15 +1,15 @@
 [
-    {"id":"01","name":"OnePlus Watch Cobalt Limited Edition","price":"26500","img":"../../../images/oneplus_watch.jpg"},
-    {"id":"02","name":"Apple Watch SE A2352","price":"43000","img":"../../../images/apple-watch-se-101.jpg"},
-    {"id":"03","name":"Apple Watch Series 7 45mm","price":"48000","img":"../../../images/apple-watch-series-7-45mm.jpg"},
-    {"id":"04","name":"Apple Watch Series 6 45mm","price":"45000","img":"../../../images/series-6.jpg"},
-    {"id":"05","name":"Xiaomi Amazfit GTS 3","price":"13290","img":"../../../images/xiaomi-amazfit-gts-3.jpg"},
-    {"id":"06","name":"Amazfit Bip U Pro","price":"4800","img":"../../../images/amazfit-bip_600x600.jpg"},
-    {"id":"07","name":"Zeblaze GTS 2","price":"2500","img":"../../../images/zeblaze-gts-2-01-500x500.jpg"},
-    {"id":"08","name":"Havit HV-M9006","price":"5490","img":"../../../images/m9006-2-500x500.jpg"},
-    {"id":"09","name":"Havit HV-M9013","price":"2600","img":"../../../images/hv-m9013-black-01-500x500.jpg"},
-    {"id":"10","name":"Haylou LS02","price":"1950","img":"../../../images/haylou-ls02-500x500.jpeg"},
-    {"id":"11","name":"Haylou GST LS09B Spo2","price":"2300","img":"../../../images/haylou-gst-ls09b-03-500x500.jpg"},
-    {"id":"12","name":"Kieslect L11 Lady Smart Watch","price":"3500","img":"../../../images/kieslect-l11-01-500x500.jpg"}
+    {"id":"01","name":"OnePlus Watch Cobalt Limited Edition","price":"26500","img":"oneplus_watch.jpg"},
+    {"id":"02","name":"Apple Watch SE A2352","price":"43000","img":"apple-watch-se-101.jpg"},
+    {"id":"03","name":"Apple Watch Series 7 45mm","price":"48000","img":"apple-watch-series-7-45mm.jpg"},
+    {"id":"04","name":"Apple Watch Series 6 45mm","price":"45000","img":"series-6.jpg"},
+    {"id":"05","name":"Xiaomi Amazfit GTS 3","price":"13290","img":"xiaomi-amazfit-gts-3.jpg"},
+    {"id":"06","name":"Amazfit Bip U Pro","price":"4800","img":"amazfit-bip_600x600.jpg"},
+    {"id":"07","name":"Zeblaze GTS 2","price":"2500","img":"zeblaze-gts-2-01-500x500.jpg"},
+    {"id":"08","name":"Havit HV-M9006","price":"5490","img":"m9006-2-500x500.jpg"},
+    {"id":"09","name":"Havit HV-M9013","price":"2600","img":"hv-m9013-black-01-500x500.jpg"},
+    {"id":"10","name":"Haylou LS02","price":"1950","img":"haylou-ls02-500x500.jpeg"},
+    {"id":"11","name":"Haylou GST LS09B Spo2","price":"2300","img":"haylou-gst-ls09b-03-500x500.jpg"},
+    {"id":"12","name":"Kieslect L11 Lady Smart Watch","price":"3500","img":"kieslect-l11-01-500x500.jpg"}
     
 ]
