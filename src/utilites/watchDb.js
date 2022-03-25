@@ -1,35 +1,38 @@
-const AddToMealDb=(id)=>{
-    let mealCart={}
-    const storedMealCart=localStorage.getItem('meal-cart')
-    if(storedMealCart){
-        mealCart=JSON.parse(storedMealCart)
+const AddToWatchDb=(id)=>{
+    let watchCart={}
+    const storedWatchCart=localStorage.getItem('watch-cart')
+    if(storedWatchCart){
+        watchCart=JSON.parse(storedWatchCart)
     }
-    const storedMeal=mealCart[id]
-    if(storedMeal){
-        mealCart[id]=storedMeal+1
+    const storedWatch=watchCart[id]
+    if(storedWatch){
+        watchCart[id]=storedWatch+1
     }else{
-        mealCart[id]=1
+        watchCart[id]=1
     }
-    localStorage.setItem('meal-cart',JSON.stringify(mealCart))
+    localStorage.setItem('watch-cart',JSON.stringify(watchCart))
 
 }
-const getMealFromDb=()=>{
-    let mealCart={}
-    const storedMealCart=localStorage.getItem('meal-cart')
-    if(storedMealCart){
-        mealCart=JSON.parse(storedMealCart)
+const getWatchFromDb=()=>{
+    let watchCart={}
+    const storedWatchCart=localStorage.getItem('watch-cart')
+    if(storedWatchCart){
+        watchCart=JSON.parse(storedWatchCart)
     }
-    return mealCart
+    return watchCart
 
 }
-const removeFromCart=(id)=>{
-    let mealCart={}
-    const storedMealCart=localStorage.getItem('meal-cart')
-    if(storedMealCart){
-        mealCart=JSON.parse(storedMealCart)
-        delete mealCart[id]
-        localStorage.setItem('meal-cart',JSON.stringify(mealCart))
+const removeFromDb=(id)=>{
+    let watchCart={}
+    const storedWatchCart=localStorage.getItem('watch-cart')
+    if(storedWatchCart){
+        watchCart=JSON.parse(storedWatchCart)
+        delete watchCart[id]
+        localStorage.setItem('watch-cart',JSON.stringify(watchCart))
 
     }
 }
-export{AddToMealDb,getMealFromDb,removeFromCart}
+const removeAllFromDb=()=>{
+    localStorage.removeItem('watch-cart')
+}
+export{AddToWatchDb,getWatchFromDb,removeFromDb,removeAllFromDb}

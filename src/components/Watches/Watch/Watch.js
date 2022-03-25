@@ -5,9 +5,8 @@ import './Watch.css'
 import taka from '../../../utilites/currency/taka.png'
 
 
-const Watch = ({watch}) => {
+const Watch = ({watch,handleAddToCart}) => {
     const {img,name,price}=watch
-    console.log(img)
     return (
         <div className="col">
             <div className="card">
@@ -16,7 +15,7 @@ const Watch = ({watch}) => {
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">Price:<img src={taka} alt="..." style={{width:'20px',height:'20px'}}/>{price}</p>
                 </div>
-                <button className='btn btn-primary rounded-bottom'>Add to Cart <FontAwesomeIcon icon={faCartShopping}/></button>
+                <button className='btn btn-primary rounded-bottom' onClick={()=>handleAddToCart(watch)}>Add to Cart <FontAwesomeIcon icon={faCartShopping}/></button>
             </div>
         </div>
     );
