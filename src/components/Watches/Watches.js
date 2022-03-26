@@ -11,6 +11,7 @@ const Watches = () => {
     const [watches,setWatches]=useState([])
     const [cart,setCart]=useState([])
     const [modalIsOpen, setIsOpen] = useState(false);
+    const[itemForMe,setItemForMe]=useState([])
     const[message,setMessage]=useState('')
 
     useEffect(()=>{
@@ -73,6 +74,7 @@ const Watches = () => {
     const handleRemoveAllFromCart=()=>{
         //remove from cart
         setCart([])
+        setItemForMe([])
         //remove from localStorage
         removeAllFromDb()
 
@@ -81,9 +83,10 @@ const Watches = () => {
     //choose random item
     const handleRandomItem=(item)=>{
         let randomItem=[]
-        randomItem.push(cart[Math.floor(Math.random()*cart.length)])
-        setCart(randomItem)
-        console.log(randomItem)
+        if(cart.length>0){
+            randomItem.push(cart[Math.floor(Math.random()*cart.length)])
+        }
+        setItemForMe(randomItem)
 
     }
     //modal close
@@ -107,7 +110,9 @@ const Watches = () => {
                 </div>
                 {/* Cart */}
                 <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart} handleRemoveAllFromCart={handleRemoveAllFromCart} handleRandomItem={handleRandomItem}/>
+                    <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart} handleRemoveAllFromCart={handleRemoveAllFromCart} handleRandomItem={handleRandomItem}
+                    itemForMe={itemForMe}
+                    />
                 </div>
             </div>
             <hr />

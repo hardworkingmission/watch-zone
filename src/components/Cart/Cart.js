@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 
-const Cart = ({cart,handleRemoveFromCart,handleRemoveAllFromCart,handleRandomItem}) => {
+const Cart = ({cart,handleRemoveFromCart,handleRemoveAllFromCart,handleRandomItem,itemForMe}) => {
     //console.log(cart)
     return (
         <div className='p-2 border border-1 cart rounded'>
@@ -18,6 +18,21 @@ const Cart = ({cart,handleRemoveFromCart,handleRemoveAllFromCart,handleRandomIte
                     </div>
 
                 ))
+            }
+            
+            {   <>
+                 <hr />
+                 <h5 className='text-center '>This is For Me</h5>
+                 <hr />
+                {itemForMe?.map(item=>(
+                    <div key={item.id} className='d-flex align-items-center mb-1 border border-1 p-2 rounded'>
+                        <img src={process.env.PUBLIC_URL +`/images/${item?.img}`} alt="" style={{width:'50px',height:'50px'}}/>
+                        <i className='fs-6'>{item?.name}</i>
+                    </div>
+
+                ))}
+                </>
+
             }
             <button className="btn btn-primary w-100 my-3" onClick={()=>handleRandomItem()}>Choose 1 For Me</button>
             <button className="btn btn-danger w-100" onClick={()=>handleRemoveAllFromCart()}>Choose Again</button>
