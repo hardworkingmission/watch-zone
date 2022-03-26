@@ -6,7 +6,7 @@ import './Cart.css'
 const Cart = ({cart,handleRemoveFromCart,handleRemoveAllFromCart,handleRandomItem}) => {
     //console.log(cart)
     return (
-        <div className='p-2 border border-1 cart'>
+        <div className='p-2 border border-1 cart rounded'>
             <h5 className='text-center '>Selected Items</h5>
             <hr />
             {
