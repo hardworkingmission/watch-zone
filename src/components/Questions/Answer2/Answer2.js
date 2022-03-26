@@ -24,7 +24,7 @@ const Answer2 = () => {
                     </tr>
                     <tr>
                     <th scope="row">3</th>
-                    <td >Data and Function can be passed throw props</td>
+                    <td >Data and Function can be passed throw props from parent to the child components</td>
                     <td>State can be accessed by the component where this state is declared</td>
                     </tr>
                 </tbody>
